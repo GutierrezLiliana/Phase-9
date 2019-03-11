@@ -1,0 +1,41 @@
+<!-- notice how both the opening <html> tag and the closing </html> tag are NOT indented so you can clearly see the start and end of the code -->
+<html>
+	
+	<!-- the <head> section is for all the information that is needed by the browser but does NOT show up on the page -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Wireframe B</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<!-- the <body> section is for all the content that is actually displayed on the page -->
+	<body>
+		<div class="square-div pink">
+			<div class="block blue c">Which products are considered the high-end makeup products from the top 6 images?</div>
+			<div class="row red" onclick="checkColors()"><center>Click Here to Make sure Photos are Correctly Clicked</center></div>
+			<div class="block blue c"><center>Which products are considered the cheap drug store makeup products from the bottom 6 images?</center><b><div id="some_div">Timer</div></b></div>
+			<div class="row red" onclick="checkColors2()"><a href="http://google.com"><img src="images/lips.gif" class="hide restrict-img-size" id="key"></a><center>Click Here to see if second question images are correct</center></div>
+		</div>
+		<div class="block-div purple">
+			<div class="block2 gold center-context"><img class="restrict-img-size" src="images/highend.png" alt="Mac Lipstick" id="mac" onclick="playSound(this)"></div>
+			<div class="box pink center-context"><img class="strech" src="images/bare.png" alt="Bare Minerals" onclick="playSound2()"></div>
+			<div class="block2 gold center-context"><img class="restrict-img-size" src="images/nyx.png" alt="Nyx" onclick="playSound2()"></div>
+			<div class="box pink center-context"><img class="restrict-img-size" src="images/fentygloss.png" alt="gloss" id="Fenty" onclick="playSound(this)"></div>
+		</div>
+		<div class="block-div gold">
+			<div class="block2 slate center-context"><img class="restrict-img-size" src="images/loreal1.png" alt="Loreal" onclick="playSound2()"></div>
+			<div class="box gold center-context"><img class="restrict-img-size" src="images/nars.png" alt="Nars" id="Nars" onclick="playSound(this)"></div>
+			<div class="block2 slate center-context"><img class="restrict-img-size" src="images/anastasia.png" alt="Anastasia" id="Anastasia" onclick="playSound(this)"></div>
+			<div class="box gold"><img class="restrict-img-size" src="images/nyxlip.png" alt="Nyx1" onclick="playSound2()"></div>
+		</div>
+		<div class="block-div slate">
+			<div class="block2 purple center-context"><img class="restrict-img-size" src="images/fenty1.png" alt="Fenty2" id="Fenty2" onclick="playSound(this)"></div>
+			<div class="box gold center-context"><img class="strech" src="images/setting.png" alt="Setting Spray" id="Setting" onclick="playSound(this)"></div>
+			<div class="block2 purple center-context"><img class="restrict-img-size" src="images/elf.png" alt="Elf" id="Elf" onclick="playSound2()"></div>
+			<div class="box gold center-context"><img class="restrict-img-size" src="images/nars1.png" alt="Nars2" id="Nars2" onclick="playSound(this)"></div>
+		</div>
+		<audio src="sounds/correctsound.mp3" type="audio/mp3" id="Correct Answer"></audio>
+		<audio src="sounds/wrongsound.mp3" type="audio/mp3" id="Wrong Answer"></audio>
+		<script src="script.js"></script>
+	</body>
+</html>
